@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+*.log
+shieldfi/data/history/*.json
+shieldfi/data/captures/*.pcap
+.pytest_cache/
+dist/
+build/

@@ -1,0 +1,17 @@
+{
+  "_comment": "Your home/office trusted Wi-Fi. ShieldFi flags mimicry when same SSID appears with different vendor/BSSID.",
+  "trusted_networks": [
+    {
+      "ssid": "HomeFiber_5G",
+      "bssid": "AA:BB:CC:11:22:33",
+      "vendor": "TP-Link",
+      "notes": "My home router"
+    },
+    {
+      "ssid": "Campus_WiFi",
+      "bssid": "00:1A:2B:AA:BB:CC",
+      "vendor": "Cisco",
+      "notes": "University Cisco APs"
+    }
+  ]
+}
