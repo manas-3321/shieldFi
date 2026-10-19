@@ -1,0 +1,30 @@
+# ShieldFi Settings — edit without touching code
+scan:
+  # auto | mock | windows | linux | macos | monitor
+  mode: "auto"
+  mock_scenario: "evil_twin"   # normal | evil_twin | arp_spoof | open_risk | all_risky
+  cache_seconds: 5
+
+analysis:
+  # Weights for suspicion score (0-100) in Module 2
+  weights:
+    duplicate_ssid: 30        # Same SSID, different BSSID
+    encryption_mismatch: 25   # WPA2 vs Open on same SSID
+    vendor_change: 20         # Cisco -> Unknown OUI
+    channel_anomaly: 15       # Same SSID on conflicting channels, one very strong
+    signal_anomaly: 10        # Single AP 20dBm stronger than peers
+
+active_check:
+  gateway_timeout: 2
+  dns_timeout: 3
+  trusted_dns:
+    - "1.1.1.1"
+    - "8.8.8.8"
+  canary_domains:
+    - "example.com"
+    - "google.com"
+    - "cloudflare.com"
+
+ui:
+  theme: "dark"
+  refresh_interval_ms: 3000

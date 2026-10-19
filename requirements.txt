@@ -1,0 +1,12 @@
+# ShieldFi — Python 3.11+ dependencies
+# Core — always needed (lightweight, pure Python)
+customtkinter>=5.2.0   # Dark-mode dashboard, beginner friendly (Tkinter wrapper)
+networkx>=3.2          # Graph analysis for Evil Twin relationships
+dnspython>=2.4         # Canary DNS checks (fallback to socket if missing)
+requests>=2.31         # DoH queries for trusted DNS (1.1.1.1/8.8.8.8)
+
+# Optional — only for monitor-mode & advanced packet work (requires admin)
+scapy>=2.5.0           # 802.11 Beacon sniffing (optional bonus, not needed for MVP)
+
+# Dev / testing
+pytest>=8.0
